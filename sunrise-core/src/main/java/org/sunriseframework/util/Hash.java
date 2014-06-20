@@ -20,7 +20,7 @@ import org.apache.commons.codec.binary.Base64;
 
 /**
 * Helper utility to generate hash
-* @author Apache Opensource
+* @author Apache  Opensource
 * @since 1.0-rc1
 */
 public class Hash {
