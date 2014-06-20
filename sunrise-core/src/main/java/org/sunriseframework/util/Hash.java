@@ -25,7 +25,7 @@ import org.apache.commons.codec.binary.Base64;
 */
 public class Hash {
 
-	public static String generateHash(byte[] input, String algorithm) {
+	public static String generate(byte[] input, String algorithm) {
         MessageDigest algo;
         String passwordHash = null;
 		try {
