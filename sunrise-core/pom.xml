@@ -48,6 +48,7 @@
 					</includes>
 					<repositoryName>sunrise-framework</repositoryName>      <!-- github repo name -->
 					<repositoryOwner>sunrise-projects</repositoryOwner>    <!-- github username -->
+					<merge>true</merge> <!-- not to overwrite http://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github -->
 				</configuration>
 				<executions>
 					<!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
