@@ -49,6 +49,10 @@
 					<repositoryName>sunrise-framework</repositoryName>      <!-- github repo name -->
 					<repositoryOwner>sunrise-projects</repositoryOwner>    <!-- github username -->
 					<merge>true</merge> <!-- not to overwrite http://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github -->
+					<!-- git clone https://github.com/sunrise-projects/sunrise-framework.git -b 1.0.x -->
+					<!-- git branch -a -->
+					<!-- git checkout -b origin/2.0.x -->
+					<!-- mvn clean deploy -->
 				</configuration>
 				<executions>
 					<!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
@@ -60,6 +64,29 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- https://github.com/kevinsawicki/github-maven-example/blob/master/example/pom.xml -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>			
 		</plugins>
 	</build>
 	<properties>
